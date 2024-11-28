@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - Nowa Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="immagini/logo.png" alt="Nowa Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="servizi.html">Servizi</a></li>
+                <li><a href="chi_siamo.html">Chi siamo</a></li>
+                <li><a href="contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contacts">
+        <h1>Contattaci</h1>
+
+        <!-- Informazioni di contatto -->
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:info@nowastudio.it">info@nowastudio.it</a></p>
+            <p><strong>Telefono:</strong> <a href="tel:+390000000000">+39 000 000 0000</a></p>
+            <p><strong>Indirizzo:</strong>Via Pizzardeto, 5b, 60025 Loreto AN</p>
+            <p><a href="https://www.google.it/maps/place//data=!4m2!3m1!1s0x13327b289af17367:0xd916095450a292ba?sa=X&ved=1t:8290&ictx=111" target="_blank">Visualizza su Google Maps</a></p>
+        </div>
+
+        <!-- Minimappa -->
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093743!2d12.4924!3d41.8902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13327b289af17367%3A0xd916095450a292ba!2sNowa%20Studio%20Tecnico!5e0!3m2!1sit!2sit!4v1693929137761!5m2!1sit!2sit" 
+                width="100%" 
+                height="400" 
+                style="border:0;" a
+                llowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <!-- Modulo di contatto -->
+        <div class="contact-form">
+            <h2>Scrivici un messaggio</h2>
+            <form action="mailto:info@nowastudio.it" method="post" enctype="text/plain">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
+
+                <label for="cognome">Cognome:</label>
+                <input type="text" id="cognome" name="cognome" placeholder="Inserisci il tuo cognome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+
+                <label for="messaggio">Messaggio:</label>
+                <textarea id="messaggio" name="messaggio" rows="5" placeholder="Scrivi il tuo messaggio"
+                    required></textarea>
+
+                <button type="submit">Invia</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <img src="immagini/logo.png" alt="Nowa Logo" class="footer-logo">
+            <div class="footer-menu">
+                <a href="index.html">Home</a>
+                <a href="servizi.html">Servizi</a>
+                <a href="chi_siamo.html">Chi siamo</a>
+                <a href="contatti.html">Contatti</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

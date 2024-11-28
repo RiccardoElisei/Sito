@@ -1,0 +1,366 @@
+/* Reset e impostazioni base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: black;
+}
+
+/* Wrapper principale */
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Carousel */
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.8s ease;
+}
+
+.carousel-slide img {
+    width: 100vw;
+    /* Larghezza dinamica */
+    height: 100vh;
+    /* Altezza dinamica */
+    object-fit: cover;
+}
+
+/* Header */
+header {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.logo img {
+    height: 70px;
+}
+
+/* Menu di navigazione */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #20B2AA;
+    border-bottom: 2px solid #20B2AA;
+}
+
+/* Descrizione Carousel */
+.carousel-description {
+    margin-top: 120px;
+    padding: 50px 20px;
+    background-color: transparent;
+    text-align: left;
+    font-size: 1.0rem;
+    color: #333;
+    max-width: 800px;
+    margin-left: 20px;
+}
+
+.carousel-description h2 {
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+    color: #20B2AA;
+}
+
+.subtitle {
+    font-size: 2.0em;
+    color: #333;
+    margin-top: 10px;
+}
+
+.carousel-description p {
+    padding-bottom: 40px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Citazioni */
+.citations-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    margin-top: 200px;
+    justify-items: center;
+}
+
+.quote-box {
+    background-color: #f4f4f4;
+    padding: 30px;
+    width: 500px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-left: 5px solid #20B2AA;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Contatti */
+.contacts {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contacts h1 {
+    font-size: 2.5em;
+    color: #20B2AA;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.contact-info a {
+    color: #20B2AA;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Minimappa */
+.map {
+    margin: 30px auto;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Modulo di contatto */
+.contact-form {
+    margin-top: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #20B2AA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #178f82;
+}
+
+/* Footer */
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 1.3em;
+    border-top: 1px solid #ddd;
+    margin-top: 100px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-logo {
+    height: 60px;
+    margin-right: 550px;
+}
+
+/* Footer Menu */
+.footer-menu {
+    display: flex;
+    gap: 15px;
+    position: static;
+    margin-top: 10px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+}
+
+.footer-menu a:hover {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+/* Sezione Servizi */
+.services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.service-card {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.service-card * {
+    position: relative;
+    z-index: 1;
+}
+
+.service-card h2 {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.service-card .learn-more {
+    display: inline-block;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.service-card .learn-more:hover {
+    background-color: #20B2AA;
+    color: #fff;
+}
+
+/* Responsività */
+@media (max-width: 1024px) {
+    .service-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel-description {
+        padding: 20px;
+        margin-top: 60px;
+    }
+
+    .quote-box {
+        width: 80%;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
